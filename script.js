@@ -67,6 +67,12 @@ const initSlider = function (currentSlider) {
 
     sliderNextBtn.addEventListener("click", slideNext);
     sliderPrevBtn.addEventListener("click", slidePrev);
+
+    const dontHaveExtraItem = sliderContainer.childElementCount <= 1;
+    if(dontHaveExtraItem){
+        sliderNextBtn.style.display = "none";
+        sliderPrevBtn.style.display = "none";
+    }
 };
 
 for (let i = 0, len = sliders.length; i < len; i++) {
