@@ -295,6 +295,16 @@ body.nav-active{
 .header.active .nav-open-btn{
   color: var(--charcoal);
 }
+#light{
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+#dark{
+  color: var(--raisin-black);
+  font-weight: bolder;
+  font-size: 2rem;
+}
 
 .navbar{
   position: fixed;
