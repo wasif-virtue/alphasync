@@ -1,80 +1,37 @@
-'use strict';
+const header = document.querySelector('[data-header]');
+const toggle = document.querySelector('[data-menu-toggle]');
+const nav = document.querySelector('[data-nav]');
+const navLinks = nav.querySelectorAll('a');
 
-const addEventOnElements = function (elements, evenType, callBack){
-    for (let i = 0, len = elements.length; i < len; i++ ){
-        elements[i].addEventListener(evenType, callBack);
-    }
+window.addEventListener('scroll', () => header.classList.toggle('sticky', window.scrollY > 32));
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', open);
+  toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+navLinks.forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  toggle.classList.remove('open');
+  toggle.setAttribute('aria-expanded', 'false');
+}));
+
+const slider = document.querySelector('[data-hero-slider]');
+const slides = [...slider.querySelectorAll('.slide')];
+const counter = slider.querySelector('[data-counter]');
+let current = 0;
+function showSlide(index) {
+  current = (index + slides.length) % slides.length;
+  slides.forEach((slide, i) => slide.classList.toggle('is-active', i === current));
+  counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
 }
+slider.querySelector('[data-next]').addEventListener('click', () => showSlide(current + 1));
+slider.querySelector('[data-prev]').addEventListener('click', () => showSlide(current - 1));
+setInterval(() => showSlide(current + 1), 5500);
 
-const navbar = document.querySelector("[data-navbar]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const overlay = document.querySelector("[data-overlay]");
-
-const toggleNavbar = function () {
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-    document.body.classList.toggle("nav-active");
-}
-
-addEventOnElements(navTogglers, "click", toggleNavbar);
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function(){
-    if (window.scrollY > 100){
-        header.classList.add("active");
-    } else {
-        header.classList.remove("active");
-    }
-})
-
-const sliders = document.querySelectorAll("[data-slider]");
-
-const initSlider = function (currentSlider) {
-    const sliderContainer = currentSlider.querySelector("[data-slider-container]");
-    const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
-    const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
-
-    let currentSlidePos = 0;
-
-    const moveSliderItem = function () {
-        sliderContainer.style.transform =
-            `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
-    };
-
-    const slideNext = function () {
-        const slideEnd =
-            currentSlidePos >= sliderContainer.childElementCount - 1;
-
-        if (slideEnd) {
-            currentSlidePos = 0;
-        } else {
-            currentSlidePos++;
-        }
-
-        moveSliderItem();
-    };
-
-    const slidePrev = function () {
-        if (currentSlidePos <= 0) {
-            currentSlidePos = sliderContainer.childElementCount - 1;
-        } else {
-            currentSlidePos--;
-        }
-
-        moveSliderItem();
-    };
-
-    sliderNextBtn.addEventListener("click", slideNext);
-    sliderPrevBtn.addEventListener("click", slidePrev);
-
-    const dontHaveExtraItem = sliderContainer.childElementCount <= 1;
-    if(dontHaveExtraItem){
-        sliderNextBtn.style.display = "none";
-        sliderPrevBtn.style.display = "none";
-    }
-};
-
-for (let i = 0, len = sliders.length; i < len; i++) {
-    initSlider(sliders[i]);
-}
+const sections = [...document.querySelectorAll('main section[id]')];
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+  if (!entry.isIntersecting) return;
+  navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+}), { rootMargin: '-35% 0px -60% 0px' });
+sections.forEach(section => observer.observe(section));

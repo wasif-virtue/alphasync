@@ -3,283 +3,314 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlphaSync 360 Solutions</title>
-    <meta name="title" content="AlphaSync" />
     <meta
       name="description"
-      content="AlphaSync is a forward-thinking software company specializing in next-generation Artificial Intelligence and digital innovation."
+      content="AlphaSync engineers intelligent AI, software and learning platforms for organisations ready to scale."
     />
-    <link rel="shortcut icon" href="favicon.png" type="image/png+xml" />
+    <title>AlphaSync 360 Solutions | Engineering Intelligent Futures</title>
+    <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preload" as="image" href="hero-bg.jpg" />
-    <link rel="preload" as="image" href="hero-slide-1.jpg" />
-    <link rel="preload" as="image" href="hero-slide-2.jpg" />
-    <link rel="preload" as="image" href="hero-slide-3.jpg" />
   </head>
   <body>
-    <!-- header -->
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <h2 class="logo-light" id="light">AlphaSync 360 Solutions</h2>
-          <h2 class="logo-dark" id="dark">Alphasync 360 Solutions</h2>
-          <!-- <img
-            src="logo-light.svg"
-            width="74"
-            height="24"
-            alt="AlphaSync home"
-            class="logo-light"
-          />
-          <img
-            src="logo-dark.svg"
-            width="74"
-            height="24"
-            alt="AlphaSync home"
-            class="logo-dark"
-          /> -->
-        </a>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="" class="logo">
-          <h2 class="logo-light" id="light">AlphaSync 360 Solutions</h2>
-              
-            </a>
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-
-          <div class="navbar-list">
-            <li>
-              <a href="#" class="navbar-link">Home</a>
-              <a href="#" class="navbar-link">About</a>
-              <a href="#" class="navbar-link">Services</a>
-              <a href="#" class="navbar-link">Projects</a>
-              <a href="#" class="navbar-link">Contact</a>
-            </li>
-          </div>
-
-          <div class="wrapper">
-            <a href="mailto:writers@alphasync.us" class="contact-link"
-              >writers@alphasync.us</a
-            >
-            <a href="tel:+923378635755" class="contact-link">+92 337 8635755</a>
-          </div>
-
-          <ul class="social-list">
-            <li>
-              <a href="" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-link">
-                <ion-icon name="logo-dribbble"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="#" class="btn btn-primary">Contact Us</a>
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="AlphaSync home"
+          ><h1>AlphaSync 360 Solutions</h1></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span></span><span></span>
         </button>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
+        <nav class="main-nav" aria-label="Main navigation" data-nav>
+          <a href="#home" class="active">Home</a><a href="#about">About</a
+          ><a href="#services">Services</a><a href="#why-us">Why AlphaSync</a
+          ><a href="#contact">Contact</a
+          ><a href="#contact" class="nav-contact"
+            >Start a project <span>↗</span></a
+          >
+        </nav>
       </div>
     </header>
-
-    <main>
-      <article>
-        <section class="section hero has-bg-image"
-          aria-label="home"
-          style="background-image: url('bg-hero.jpg')" >
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="h1 hero-title">
-                Crafting project specific solutions with expertise.
-              </h1>
-              <p class="hero-text">
-                We build intelligent platforms, autonomous AI agents, and advanced educational technologies that empower businesses and institutions worldwide.
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="hero-grid"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> AlphaSync 360 Solutions</p>
+            <h1>Engineering <em>intelligent</em> futures.</h1>
+            <p class="hero-lede">
+              We design AI-powered platforms, autonomous agents and digital
+              learning systems that help ambitious organisations move faster and
+              grow smarter.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="button button-primary"
+                >Build with us <span>→</span></a
+              ><a href="#services" class="text-link"
+                >Explore capabilities <span>↓</span></a
+              >
+            </div>
+            <div class="hero-proof">
+              <div class="avatars"><i>AI</i><i>UX</i><i>DX</i></div>
+              <p>
+                Trusted engineering partner for teams<br />across four
+                continents.
               </p>
-              <div class="btn-wrapper">
-                <a href="#" class="btn btn-primary">Explore Now</a>
-
-                <a href="#" class="btn btn-outline">Contact Ua</a>
-              </div>
-            </div>
-
-            <div class="hero-slider" data-slider>
-              <div class="slider-inner">
-                <ul class="slider-container" data-slider-container>
-                  <li class="slider-item">
-                    <figure
-                      class="img-holder"
-                      style="--width: 575; --height: 550"
-                    >
-                      <img
-                        src="hero-slide-1.jpg"
-                        width="575"
-                        height="550"
-                        alt="hero banner"
-                        class="img-cover"
-                      />
-                    </figure>
-                  </li>
-                  <li class="slider-item">
-                    <div class="hero-card">
-                      <figure
-                        class="img-holder"
-                        style="--width: 575; --height: 550"
-                      >
-                        <img
-                          src="hero-slide-2.jpg"
-                          width="575"
-                          height="550"
-                          alt="hero-banner"
-                          class="img-cover"
-                        />
-                      </figure>
-
-                      <button class="play-btn" aria-label="play adex intro">
-                        <ion-icon name="play" aria-hidden="true"></ion-icon>
-                      </button>
-                    </div>
-                  </li>
-                  <li class="slider-item">
-                    <figure
-                      class="img-holder"
-                      style="--width: 575; --height: 550"
-                    >
-                      <img
-                        src="hero-slide-3.jpg"
-                        width="575"
-                        height="550"
-                        alt="hero banner"
-                        class="img-cover"
-                      />
-                    </figure>
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                class="slider-btn prev"
-                aria-label="slide to previous"
-                data-slider-prev
-              >
-                <ion-icon name="arrow-back"></ion-icon>
-              </button>
-              <button
-                class="slider-btn next"
-                aria-label="slide to next"
-                data-slider-next
-              >
-                <ion-icon name="arrow-forward"></ion-icon>
-              </button>
             </div>
           </div>
-        </section>
-
-        <section class="section service" aria-labelledby="service-label">
-          <div class="container">
-            <p class="section-subtitle" id="service-label">What We Do?</p>
-            <h2 class="h2 section-title">The service we offer is specifically designed to meet your needs.</h2>
-            <ul class="grid-list">
-              <li>
-                <div class="service-card">
-                  <div class="card-icon"><ion-icon name="call-outline" aria-hidden="true"></ion-icon></div>
-                  <h3 class="h4 card-title">24/7 Support</h3>
-                  <p class="card-text">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-
-                </a>
-                </div>
-
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon"><ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon></div>
-                  <h3 class="h4 card-title">Secure Payments</h3>
-                  <p class="card-text">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-                
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-
-                </a>
-                </div>
-
-              </li>
-               <li>
-                <div class="service-card">
-                  <div class="card-icon"><ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon></div>
-                  <h3 class="h4 card-title">Daily Updates</h3>
-                  <p class="card-text">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-                  <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-
-                </a>
-                </div>
-                
-
-              </li>
-               <li>
-                <div class="service-card">
-                  <div class="card-icon"><ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon></div>
-                  <h3 class="h4 card-title">Market Research</h3>
-                  <p class="card-text">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-                <a href="#" class="btn-text">
-                  <span class="span">Learn More</span>
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-
-                </a>
-                </div>
-
-              </li>
-            </ul>
+          <div class="hero-visual" data-hero-slider>
+            <div class="slider-frame">
+              <img
+                class="slide is-active"
+                src="hero-slide-1.jpg"
+                alt="AlphaSync team member in a collaborative workspace"
+              /><img
+                class="slide"
+                src="hero-slide-2.jpg"
+                alt="A team planning around a table"
+              /><img
+                class="slide"
+                src="hero-slide-3.jpg"
+                alt="A team collaborating in an office"
+              />
+              <div class="visual-glow"></div>
+              <div class="image-label">
+                <span class="pulse"></span> Intelligence in motion
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button data-prev aria-label="Previous image">←</button
+              ><span data-counter>01 / 03</span
+              ><button data-next aria-label="Next image">→</button>
+            </div>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
           </div>
-        </section>
-      </article>
+        </div>
+        <div class="container scroll-strip">
+          <span>AI &amp; Generative AI</span><b>✦</b
+          ><span>Autonomous Agents</span><b>✦</b><span>Learning Technology</span
+          ><b>✦</b><span>Software Engineering</span>
+        </div>
+      </section>
+      <section class="intro section" id="about">
+        <div class="container intro-layout">
+          <div>
+            <p class="eyebrow dark"><span></span> The AlphaSync difference</p>
+            <h2>Complex challenges.<br /><em>Clearer outcomes.</em></h2>
+          </div>
+          <div class="intro-text">
+            <p>
+              AlphaSync blends deep technical expertise with cutting-edge
+              research to transform how organisations operate, teach and scale.
+            </p>
+            <p>
+              From intelligent enterprise workflows to immersive virtual
+              learning environments, we create software that is secure, scalable
+              and built for measurable impact.
+            </p>
+            <a class="text-link dark-link" href="#why-us"
+              >Discover our approach <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark"><span></span> What we build</p>
+              <h2>Technology with a<br /><em>purpose.</em></h2>
+            </div>
+            <p>
+              From first idea to resilient product, our multidisciplinary team
+              brings the right people and technology together.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card featured">
+              <p class="card-no">01</p>
+              <div class="service-icon">✦</div>
+              <h3>Artificial Intelligence &amp; Generative AI</h3>
+              <p>
+                Custom AI products and integrations that turn data into better
+                decisions, streamlined operations and new possibilities.
+              </p>
+              <ul>
+                <li>LLM integration &amp; fine-tuning</li>
+                <li>Predictive analytics</li>
+                <li>AI business intelligence</li>
+              </ul>
+              <a href="#contact">Explore <span>→</span></a>
+            </article>
+            <article class="service-card">
+              <p class="card-no">02</p>
+              <div class="service-icon">◌</div>
+              <h3>Autonomous AI Agents</h3>
+              <p>
+                Digital teammates that research, reason, execute workflows and
+                improve performance with minimal human input.
+              </p>
+              <a href="#contact">Explore <span>→</span></a>
+            </article>
+            <article class="service-card">
+              <p class="card-no">03</p>
+              <div class="service-icon">⌘</div>
+              <h3>Software Development</h3>
+              <p>
+                High-performing custom applications, automation platforms and
+                cloud-native tools built to last.
+              </p>
+              <a href="#contact">Explore <span>→</span></a>
+            </article>
+            <article class="service-card">
+              <p class="card-no">04</p>
+              <div class="service-icon">◈</div>
+              <h3>Digital Learning Technology</h3>
+              <p>
+                Modern LMS, VLE and academic platforms that elevate engagement,
+                access and institutional performance.
+              </p>
+              <a href="#contact">Explore <span>→</span></a>
+            </article>
+            <article class="service-card">
+              <p class="card-no">05</p>
+              <div class="service-icon">↗</div>
+              <h3>Web &amp; App Development</h3>
+              <p>
+                Intuitive websites, SaaS products and mobile experiences
+                designed around the people who use them.
+              </p>
+              <a href="#contact">Explore <span>→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="feature section">
+        <div class="container feature-layout">
+          <div class="feature-art">
+            <img
+              src="feature-banner.png"
+              alt="Illustration of a digital product experience"
+            />
+          </div>
+          <div>
+            <p class="eyebrow dark"><span></span> Built for momentum</p>
+            <h2>From potential<br />to <em>progress.</em></h2>
+            <p class="feature-copy">
+              We pair human-centred design with robust engineering, so every
+              product feels intuitive today and is ready for tomorrow.
+            </p>
+            <div class="feature-points">
+              <div>
+                <strong>01</strong>
+                <p>
+                  <b>Strategy that connects.</b> Technology choices made around
+                  your objectives, users and growth plan.
+                </p>
+              </div>
+              <div>
+                <strong>02</strong>
+                <p>
+                  <b>Delivery you can trust.</b> Clear collaboration, quality
+                  engineering and a partnership that continues after launch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats" id="why-us">
+        <div class="container">
+          <p class="eyebrow light"><span></span> Why AlphaSync</p>
+          <div class="stats-top">
+            <h2>Global expertise.<br /><em>Personal commitment.</em></h2>
+            <p>
+              We help forward-thinking companies, institutions and public-sector
+              teams build the systems that define what comes next.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div>
+              <strong>01</strong><span>Continents<br />of experience</span>
+            </div>
+            <div>
+              <strong>02</strong><span>Specialist<br />capability areas</span>
+            </div>
+            <div>
+              <strong>03</strong><span>Ideas ready<br />to become real</span>
+            </div>
+            <div>
+              <strong>04</strong
+              ><span>Long-term partner<br />by your side</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="industries section">
+        <div class="container industries-layout">
+          <div>
+            <p class="eyebrow dark"><span></span> Proven across sectors</p>
+            <h2>Expertise where<br />it <em>counts.</em></h2>
+          </div>
+          <div class="industry-list">
+            <div>
+              <span>01</span>
+              <h3>Education &amp; Research</h3>
+              <i>↗</i>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Enterprise &amp; Technology</h3>
+              <i>↗</i>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Retail &amp; Hospitality</h3>
+              <i>↗</i>
+            </div>
+            <div>
+              <span>04</span>
+              <h3>Investment &amp; Public Sector</h3>
+              <i>↗</i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta" id="contact">
+        <div class="container cta-inner">
+          <p class="eyebrow light"><span></span> Start the conversation</p>
+          <h2>Let’s create intelligent<br />software <em>together.</em></h2>
+          <p>
+            Tell us where you want to go. We’ll help engineer the way forward.
+          </p>
+          <div class="cta-actions">
+            <a class="button button-light " href="mailto:writers@alphasync.us"
+              >writers@alphasync.us <span>↗</span></a
+            ><a class="phone" href="tel:+923378635755">+92 337 8635755</a>
+          </div>
+        </div>
+      </section>
     </main>
-
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand" href="#home" aria-label="AlphaSync home"
+          ><h1>AlphaSync 360 Solutions</h1></a
+        >
+        <p>© 2026 AlphaSync 360 Solutions. Engineering intelligent futures.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
